@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Inter", sans-serif !important;
+}
+
+.full-page {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-rows: 1fr 0rem;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.theme-morning {
+  background-image: url("../assets/desktop/bg-image-daytime.jpg");
+}
+
+.theme-night {
+  background-image: url("../assets/desktop/bg-image-nighttime.jpg");
+}
+
+.grid-temp-0 {
+  grid-template-rows: 1fr 0rem;
+}
+.grid-temp-30 {
+  grid-template-rows: 1fr 30rem;
+}
+
+/* =========== top-page ============ */
+
+.full-page .top-page {
+  background-color: rgba(15, 15, 15, 0.397);
+  width: 100%;
+  /* backdrop-filter: blur(12px); */
+}
+
+.top-page .head-quote {
+  top: 5rem;
+  left: 10rem;
+  width: 500px;
+}
+
+.head-quote img {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.head-down {
+  bottom: 5rem;
+  left: 10rem;
+}
+
+.head-down img {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+}
+
+.head-down span {
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+
+.time-clock {
+  color: #fff;
+  font-size: 190px;
+  font-weight: 700;
+}
+
+.location {
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.location span {
+  font-size: 25px;
+}
+
+.more-less {
+  bottom: 5rem;
+  right: 8rem;
+  width: 150px;
+  padding: 10px 8px 10px 20px !important;
+  border-radius: 30px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.more-less .text-more {
+  color: #aaa;
+  letter-spacing: 2px;
+}
+
+.more-less .img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
+
+.img-moon-sun {
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  background-position: center;
+}
+
+.img-sun {
+  background-image: url("../assets/desktop/icon-sun.svg");
+}
+
+.img-moon {
+  background-image: url("../assets/desktop/icon-moon.svg");
+}
+
+/* ========= bottom-page  ============== */
+
+.full-page .bottom-page {
+  backdrop-filter: blur(13px);
+  width: 100%;
+  height: 500px;
+}
+
+/* =========== color - morning and night ===== */
+
+.color-morning {
+  background-color: #ffffff77;
+}
+.color-night {
+  background-color: #000000c5;
+}
+
+/* ==================== */
+
+.left-time-zone {
+  width: 400px;
+}
+
+.title-timezone,
+.title-day {
+  letter-spacing: 2px;
+}
+
+.color-title-morning {
+  color: #5a5a5a;
+}
+
+.color-title-night {
+  color: #fff;
+}
+
+.location-timezone {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.num-day-year,
+.day-week,
+.week-number {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.num-morning {
+  color: #000;
+}
+
+.num-night {
+  color: #fff;
+}

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Clock App" />
+    <!-- <link rel="icon"type="image/png"sizes="32x32"href="./assets/favicon-32x32.png"/> -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <title>Frontend Mentor | Clock App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="full-page grid-temp-0 theme-morning">
+      <div class="top-page position-relative">
+        <div class="head-quote position-absolute d-flex align-items gap-5">
+          <div class="full-quote">
+            <div class="quote-page text-light"></div>
+            <div class="author-quote text-light mt-4"></div>
+          </div>
+          <img src="assets/desktop/icon-refresh.svg" alt="" />
+        </div>
+
+        <div class="head-down position-absolute">
+          <div class="d-flex">
+            <div class="times-night-morning d-flex align-items-center">
+              <div class="img-moon-sun img-sun me-3"></div>
+              <span class="text-light me-2 change-times"></span>
+            </div>
+            <span class="current-time d-flex text-light"> IT'S CURRENTLY</span>
+          </div>
+          <div class="time-clock"></div>
+          <div class="location text-light">
+            IN <span class="city-loca"></span>
+            <span class="country-loca"></span>
+          </div>
+        </div>
+
+        <div
+          class="more-less d-flex align-items-center justify-content-between position-absolute"
+        >
+          <div class="text-more">MORE</div>
+          <img src="assets/desktop/icon-arrow-up.svg" alt="" />
+        </div>
+      </div>
+      <!-- ================= BOTTOM --- PAGE ================ -->
+      <div
+        class="bottom-page color-morning d-flex align-items-center justify-content-evenly p-4"
+      >
+        <div class="left-time-zone">
+          <div class="current-timezone mb-5">
+            <div class="title-timezone all-titles color-title-morning mb-3">
+              CURRENT TIMEZONE
+            </div>
+            <div class="location-timezone all-num num-morning"></div>
+          </div>
+          <div class="day-of-year">
+            <div class="title-day all-titles color-title-morning mb-3">
+              DAY OF THE YEAR
+            </div>
+            <div class="num-day-year all-num num-morning"></div>
+          </div>
+        </div>
+
+        <div class="right-time-zone">
+          <div class="current-timezone mb-5">
+            <div class="title-timezone all-titles color-title-morning mb-3">
+              DAY OF THE WEEK
+            </div>
+            <div class="day-week all-num num-morning"></div>
+          </div>
+          <div class="day-of-year">
+            <div class="title-day all-titles color-title-morning mb-3">
+              WEEK NUMBER
+            </div>
+            <div class="week-number all-num num-morning"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+    <!-- , it's currently
+
+  in
+
+  More
+  Less
+
+  Current timezone
+  Day of the year
+  Day of the week
+  Week number -->
+  </body>
+</html>
