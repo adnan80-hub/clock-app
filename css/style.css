@@ -94,12 +94,12 @@ body {
   width: 150px;
   padding: 10px 8px 10px 20px !important;
   border-radius: 30px;
-  background-color: #fff;
+  background-color: #ffffff;
   cursor: pointer;
 }
 
 .more-less .text-more {
-  color: #aaa;
+  color: #a9a9a9;
   letter-spacing: 2px;
 }
 

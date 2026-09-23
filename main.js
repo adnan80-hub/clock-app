@@ -56,6 +56,7 @@ window.addEventListener("load", function () {
     let fetchData = await fetch("https://api.ip.sb/geoip");
     let final = await fetchData.json();
 
+    console.log(final);
     city_location.textContent = `${final.city},`;
     country_location.textContent = final.country_code;
     location_timezone.textContent = final.timezone;
